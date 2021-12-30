@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "ctime": "cpp",
+        "*.tcc": "cpp",
+        "log.h": "c",
+        "locale": "c",
+        "__locale": "c",
+        "functional": "c"
+    }
+}
