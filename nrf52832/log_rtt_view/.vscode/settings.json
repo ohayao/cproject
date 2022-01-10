@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "boards.h": "c",
+        "nrf_log_default_backends.h": "c",
+        "segger_rtt.h": "c"
+    }
+}
