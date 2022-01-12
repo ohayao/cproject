@@ -11,3 +11,4 @@
     cd nrf52832/log_rtt_view/build
     make help
     ```
+- ble_demo_central
