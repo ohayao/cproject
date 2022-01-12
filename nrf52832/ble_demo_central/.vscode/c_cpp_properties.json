@@ -1,0 +1,64 @@
+{
+    "env": {
+        "GNU_GCC": "/Applications/ARM",
+        "nRF5_SDK17": "/Users/jason/nRF5_SDK17",
+        "SOFTDEVICE_DEFINE": "S132",
+        "SOFTDEVICE_INCLUDE": "s132"
+    },
+    "configurations": [
+        {
+            "name": "ARMGCC",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${env:GNU_GCC}/arm-none-eabi/include",
+                "${env:nRF5_SDK17}/components/boards",
+                "${env:nRF5_SDK17}/components/libraries/**",
+                "${env:nRF5_SDK17}/components/toolchain/cmsis/include",
+                "${env:nRF5_SDK17}/components/softdevice/common",
+                "${env:nRF5_SDK17}/components/softdevice/${env:SOFTDEVICE_INCLUDE}/headers/**",
+                "${env:nRF5_SDK17}/modules/nrfx",
+                "${env:nRF5_SDK17}/modules/nrfx/drivers/include",
+                "${env:nRF5_SDK17}/modules/nrfx/hal",
+                "${env:nRF5_SDK17}/modules/nrfx/mdk",
+                "${env:nRF5_SDK17}/integration/nrfx",
+                "${env:nRF5_SDK17}/integration/nrfx/legacy",
+                "$(env:nRF5_SDK17)/components/libraries/log/src/",
+                "${env:nRF5_SDK17}/external/segger_rtt",
+                "${env:nRF5_SDK17}/external/fprintf",
+                "${env:nRF5_SDK17}/components/ble/common",
+                "${env:nRF5_SDK17}/components/ble/ble_advertising",
+                "${env:nRF5_SDK17}/components/ble/nrf_ble_gatt",
+                "${env:nRF5_SDK17}/components/ble/nrf_ble_scan",
+                "${env:nRF5_SDK17}/components/ble/nrf_ble_gq",
+                "${env:nRF5_SDK17}/components/ble/ble_db_discovery",
+                "${env:nRF5_SDK17}/components/ble/ble_services/ble_lbs_c",
+                "${env:nRF5_SDK17}/components/libraries/pwr_mgmt",
+                "${env:nRF5_SDK17}/components/libraries/bsp",
+                "./src/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "NRF52832_XXAA",
+                "BOARD_PCA10040",
+                "CONFIG_GPIO_AS_PINRESET",
+                "INITIALIZE_USER_SECTIONS",
+                "FLOAT_ABI_HARD",
+                "SOFTDEVICE_PRESENT",
+                "${SOFTDEVICE_DEFINE}",
+                "NRF_SD_BLE_API_VERSION=7",
+                "USE_APP_CONFIG"
+            ],
+            "macFrameworkPath": [
+                "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks"
+            ],
+            "compilerPath": "${env:GNU_GCC}/bin/arm-none-eabi-gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++98",
+            "intelliSenseMode": "macos-clang-x64"
+        }
+    ],
+    "version": 4
+}

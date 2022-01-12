@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "boards.h": "c",
+        "nrf_log_default_backends.h": "c",
+        "segger_rtt.h": "c",
+        "ble_advertising.h": "c",
+        "nrf_log_ctrl.h": "c",
+        "ble_lbs_c.h": "c",
+        "ble_db_discovery.h": "c",
+        "nrf_ble_scan.h": "c",
+        "app_timer.h": "c",
+        "ble_advdata.h": "c",
+        "app_button.h": "c"
+    }
+}
