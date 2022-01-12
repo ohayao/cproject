@@ -12,3 +12,4 @@
     make help
     ```
 - ble_demo_central
+- ble_demo_peripheral
